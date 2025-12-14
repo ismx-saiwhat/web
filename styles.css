@@ -1,0 +1,153 @@
+:root {
+    --bg-color: #E2EBFA;
+    /* Light lavender-ish blue from the reference */
+    --card-bg: #FFFFFF;
+    --text-primary: #1A2B4B;
+    /* Dark navy */
+    --text-secondary: #5A6B8B;
+    --accent-blue: #8DA9E6;
+    /* Periwinkle blue for accents */
+    --accent-dark: #6B8BC6;
+    --font-family: 'Outfit', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-family);
+    background-color: var(--bg-color);
+    color: var(--text-primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.main-container {
+    width: 100%;
+    max-width: 480px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.header {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.card {
+    background-color: var(--card-bg);
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+    padding: 40px 30px;
+}
+
+.card-header h2 {
+    color: var(--accent-blue);
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.greeting {
+    font-size: 1.1rem;
+    color: var(--text-primary);
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+.actions {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.btn-primary,
+.btn-secondary {
+    display: inline-block;
+    padding: 15px 20px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.2s ease;
+    text-align: center;
+}
+
+.btn-primary {
+    background-color: var(--bg-color);
+    /* The light blue/white box in the reference middle */
+    border: 2px solid var(--accent-blue);
+    color: var(--text-primary);
+    font-size: 1.2rem;
+}
+
+.btn-primary:hover {
+    background-color: var(--accent-blue);
+    color: white;
+}
+
+.btn-secondary {
+    background-color: var(--accent-blue);
+    color: white;
+    font-size: 1rem;
+}
+
+.btn-secondary:hover {
+    background-color: var(--accent-dark);
+}
+
+.info-text p {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    line-height: 1.4;
+}
+
+.footer {
+    text-align: center;
+    font-size: 0.75rem;
+    color: var(--text-secondary);
+    margin-top: 20px;
+}
+
+.footer p {
+    margin: 5px 0;
+}
+
+/* Responsive tweaks */
+@media (max-width: 400px) {
+    .card {
+        padding: 30px 20px;
+    }
+
+    .btn-primary {
+        font-size: 1.1rem;
+    }
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-left p {
+    margin-bottom: 15px;
+}
