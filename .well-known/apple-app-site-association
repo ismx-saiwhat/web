@@ -1,0 +1,14 @@
+{
+    "applinks": {
+        "apps": [],
+        "details": [
+            {
+                "appID": "4H5UZ8889Y.com.ismx.sofia",
+                "paths": [
+                    "/user/*",
+                    "/entry/*"
+                ]
+            }
+        ]
+    }
+}
