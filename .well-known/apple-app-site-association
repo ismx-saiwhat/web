@@ -5,7 +5,9 @@
             {
                 "appID": "4H5UZ8889Y.com.ismx.sofia",
                 "paths": [
+                    "/user",
                     "/user/*",
+                    "/entry",
                     "/entry/*"
                 ]
             }
