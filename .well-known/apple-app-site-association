@@ -18,5 +18,10 @@
                 ]
             }
         ]
+    },
+    "webcredentials": {
+        "apps": [
+            "4H5UZ8889Y.com.ismx.sofia"
+        ]
     }
 }
